@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Uploader</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="css/style.css" type="text/css"  />
+	<link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
+	<!-- javascript files -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/uploader.js"></script>
+	<script src="js/jquery.Jcrop.min.js"></script>
+</head>
+<body>
+	<!-- content -->
+	<ul id="lista-imagenes" class="lista-imagenes"></ul>
+	<label for="files" onClick="HandleUploadClick();"><span class="btn">+</span></label>
+	<input class="oculto" id="testinput" type="file" name="pic" accept="image/*" onChange="addFile();this.value=null;return false;" />
+	<div id="cortar" class="modalDialog"></div>
+	<input type="hidden" id="x" name="x" />
+	<input type="hidden" id="y" name="y" />
+	<input type="hidden" id="w" name="w" />
+	<input type="hidden" id="h" name="h" />
+	<input type="hidden" id="src" name="src" />
+</body>
+</html>
